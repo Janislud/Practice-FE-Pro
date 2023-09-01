@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruts</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleCatalog.css">
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+      <div class="main-nav-wrapper">
+        <ul class="main-nav">
+            <li class="main-nav-fruts"><a href="./fruitCatalog.html">Fruts</a></li>
+            <li class="main-nav-vegetables"><a href="./vegetablesCatalog.html">Vegetables</a></li>
+            <li class="main-nav-mushroom"><a href="./mushroomCatalog.html">Mushroom</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+        <section>
+        <div class="button-wrapper">
+        <p>Общее количество товаров:<span id="resultQuantity">0</span></p>
+      <p>Общая сумма товаров:<span id ="resultPrice"></span></p>
+        <button id="sortButton"">UP</button>
+        <button id="sortButton2">DOWN</button>
+    </div>
+        <div id="productContainer"></div>
+    </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-logo"></div>
+          <ul class="footer-nav">
+              <li><a href="./index.html">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2023 Your Shop. All rights reserved.</p>
+      </div>
+  </footer>
+</body>
+<script type="module" src="./appVegetables.js"></script>
+</html>

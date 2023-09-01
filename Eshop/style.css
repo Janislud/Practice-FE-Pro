@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-nav-wrapper {
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 320px;
+    margin-bottom:35px;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.main-nav-fruts {
+    background-color: green;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: aqua;   
+}
+
+.main-nav-vegetables {
+    background-color: green;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+html {
+    background-color: white;
+   
+}
+
+.main-nav-mushroom {
+    background-color: green;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  
+}
+
+body {
+    width: auto;
+    
+}
+
+header {
+    background-image: url(./media/header-img/vegetables.webp);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1960px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;    
+}
+/* --body---------------------------------------------- */
+.main-section {
+    
+    justify-content: center;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.main-section-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 1600px;
+    margin: 0 auto;
+  }
+
+.main-section-description-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main-section-description-last-child {
+    text-align: center;
+    margin-top: 50px;
+   
+  
+}
+
+.full-width {
+    grid-column: 1 / span 2;
+}
+
+
+.second-section {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.why-choose {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.second-section-wrapper {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========Footer================ */
+
+.footer {
+    background-color: yellow;
+    color: black;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
