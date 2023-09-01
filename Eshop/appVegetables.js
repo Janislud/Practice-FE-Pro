@@ -1,7 +1,11 @@
 import { newId } from './util.js';
 import { vegetables } from './productj.js';
 
-const productContainer = document.getElementById("productContainer"); 
+const productContainer = document.getElementById("productContainer");
+const addBacket = document.getElementById("addBacket")
+const productNameInput = document.querySelector('#productName')
+const productPriceInput = document.querySelector('#productPrice')
+const productQuantityInput = document.querySelector('#productQuantity')
 
 const updatedVegetables = vegetables.map((product, index) => ({
     ...product,
@@ -16,6 +20,7 @@ function updateProducts(sortedArray) {
             <p>Price: ${product.price}</p>
             <p>Amount: ${product.quantity}</p>
             <button class="addToCartButton">В корзину</button>
+            <button class="delete">Удалить товар</button>
         </div>`
     ).join('');
 

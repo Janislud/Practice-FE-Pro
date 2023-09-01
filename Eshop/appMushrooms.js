@@ -20,6 +20,7 @@ function updateProducts(sortedArray) {
             <p>Price: ${product.price}</p>
             <p>Amount: ${product.quantity}</p>
             <button class="addToCartButton">В корзину</button>
+            <button class="delete">Удалить товар</button>
         </div>`
     ).join('');
 
