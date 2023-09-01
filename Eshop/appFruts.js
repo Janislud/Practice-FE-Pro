@@ -7,6 +7,11 @@ import {
 
 const productContainer = document.getElementById("productContainer");
 const addBacket = document.getElementById("addBacket")
+const productNameInput = document.querySelector('#productName')
+const productPriceInput = document.querySelector('#productPrice')
+const productQuantityInput = document.querySelector('#productQuantity')
+
+
 
 const updatedFruts = fruts.map((product, index) => ({
     ...product,
@@ -123,3 +128,32 @@ const cart = {
     },0)
     resultQuantity.textContent = totalQuantity
   }
+
+  //Добовление карточки
+
+  
+
+  const addButton = document.querySelector('.add'); // Выбираем кнопку "Add" из формы
+
+  // Добавляем слушатель события отправки формы
+  addButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Предотвращаем отправку формы, чтобы страница не перезагружалась
+    // Создаем новый объект продукта
+    const newProduct = {
+      name: productNameInput.value,
+      price: parseFloat(productPriceInput.value),
+      quantity: parseInt(productQuantityInput.value),
+      id: newId(),
+    };
+    
+    // Добавляем новый продукт в массив и обновляем отображение
+    updatedFruts.push(newProduct);
+    updateProducts(updatedFruts);
+    
+    // Очищаем поля формы
+    productNameInput.value = ' ';
+    productPriceInput.value = ' ';
+    productQuantityInput.value = ' ';
+  });
+  
+

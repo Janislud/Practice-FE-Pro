@@ -13,12 +13,13 @@
 
 #sortButton {
     width: 300px;
-    margin-top: 15px
+    margin-top: 15px;
+  
 }
 
 #sortButton2 {
     width: 300px;
-    margin-top: 15px
+    margin-top: 20px;
 }
 
 p {
@@ -54,3 +55,26 @@ p {
     border-radius: 15px;
     margin-top:5px;
   }
+
+
+  .div-form {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-top:15px;
+  }
+
+  div-form, fieldset {
+    text-align: center;
+  }
+
+.add {
+  width: 150px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
